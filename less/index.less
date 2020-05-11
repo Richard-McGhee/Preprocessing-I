@@ -56,6 +56,7 @@ table {
 html, body {
 	height: 100%;
 	font-size: 62.5%;
+	background-color: rgb(188, 192, 196);
 }
 
 @default-size: 2rem;
@@ -64,6 +65,7 @@ html, body {
 	text-decoration: none;
 	color: gold;
 }
+@border-top: 1px solid darkgrey;
 
 .container {
 	font-size: @default-size;
@@ -108,7 +110,7 @@ span {
 	border: @test-border;
 	display: flex;
 	flex-direction: column;
-	background-color: grey;
+	background-color: lightsteelblue;
 	width: 85%;
 	.landing-img {
 		width: 22%;
@@ -174,7 +176,7 @@ span {
 		ul {
 			li {
 				padding: 2%;
-				border: 1px solid grey;
+				border: 1px solid black;
 			}
 		}
 	}
@@ -183,16 +185,25 @@ span {
 // Bottom content styling
 
 .bottom-content {
-	border: @test-border;
+	// border: @test-border;
+	margin-top: 5%;
+	width: 85%;
 	h2 {
 		font-size: 2.8rem;
 	}
 	.history {
-		border: @test-border;
+		// border: @test-border;
 		display: flex;
 		div {
 			width: 100%;
-			border: @test-border;
+			// border: @test-border;
+			p {
+				border-top: 2px solid black;
+				padding: 2%;
+			}
+			.p2, .p4 {
+				background-color: lightskyblue;
+			}
 		}
 	}
 }

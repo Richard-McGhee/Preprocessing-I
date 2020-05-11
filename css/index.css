@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  background-color: #bcc0c4;
 }
 .container {
   font-size: 2rem;
@@ -167,7 +168,7 @@ span {
   border: 2px solid darkred;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: lightsteelblue;
   width: 85%;
 }
 .landing .landing-img {
@@ -228,19 +229,26 @@ span {
 }
 .top-content .right-box-content ul li {
   padding: 2%;
-  border: 1px solid grey;
+  border: 1px solid black;
 }
 .bottom-content {
-  border: 2px solid darkred;
+  margin-top: 5%;
+  width: 85%;
 }
 .bottom-content h2 {
   font-size: 2.8rem;
 }
 .bottom-content .history {
-  border: 2px solid darkred;
   display: flex;
 }
 .bottom-content .history div {
   width: 100%;
-  border: 2px solid darkred;
+}
+.bottom-content .history div p {
+  border-top: 2px solid black;
+  padding: 2%;
+}
+.bottom-content .history div .p2,
+.bottom-content .history div .p4 {
+  background-color: lightskyblue;
 }
