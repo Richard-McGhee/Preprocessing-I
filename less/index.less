@@ -66,6 +66,10 @@ html, body {
 	color: rgb(187, 166, 45);
 }
 @border-top: 1px solid darkgrey;
+.flex-column(){
+	display: flex;
+	flex-direction: column;
+}
 
 .container {
 	font-size: @default-size;
@@ -106,8 +110,7 @@ span {
 
 .landing {
 	border: @test-border;
-	display: flex;
-	flex-direction: column;
+	.flex-column();
 	background-color: lightsteelblue;
 	width: 85%;
 	.landing-img {
@@ -229,8 +232,7 @@ span {
 
 footer {
 	// border: @test-border;
-	display: flex;
-	flex-direction: column;
+	.flex-column();
 	align-items: center;
 	justify-content: center;
 	height: 15vh;
