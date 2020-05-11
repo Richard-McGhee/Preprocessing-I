@@ -59,7 +59,34 @@ html, body {
 }
 
 @default-size: 2rem;
+@test-border: 2px solid darkred;
 
 .container {
 	font-size: @default-size;
+}
+
+// Header styling
+
+header {
+	// border: @test-border;
+	display: flex;
+	h1 {
+		// border: @test-border;
+		width: 70%;
+		padding-left: 2.5%;
+		font-size: 3rem;
+		color: darkred;
+	}
+	nav {
+		// border: @test-border;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 30%;
+		a {
+			width: 20%;
+			text-decoration: none;
+			color: gold;
+		}
+	}
 }
