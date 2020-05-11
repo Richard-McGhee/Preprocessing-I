@@ -230,3 +230,17 @@ span {
   padding: 2%;
   border: 1px solid grey;
 }
+.bottom-content {
+  border: 2px solid darkred;
+}
+.bottom-content h2 {
+  font-size: 2.8rem;
+}
+.bottom-content .history {
+  border: 2px solid darkred;
+  display: flex;
+}
+.bottom-content .history div {
+  width: 100%;
+  border: 2px solid darkred;
+}
