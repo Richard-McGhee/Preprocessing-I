@@ -252,3 +252,14 @@ span {
 .bottom-content .history div .p4 {
   background-color: lightskyblue;
 }
+footer {
+  border: 2px solid darkred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  color: gold;
+  background-color: darkred;
+  margin-top: 3%;
+  width: 85%;
+}
