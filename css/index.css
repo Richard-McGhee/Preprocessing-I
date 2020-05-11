@@ -158,3 +158,48 @@ header nav a {
   text-decoration: none;
   color: gold;
 }
+span {
+  display: flex;
+  justify-content: center;
+}
+.landing {
+  border: 2px solid darkred;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  width: 85%;
+}
+.landing .landing-img {
+  width: 22%;
+  margin: 3.5% 0 0 2%;
+}
+.landing .landing-img img {
+  width: 100%;
+}
+.landing .landing-title {
+  margin: 3.5% 0 0 2%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid darkred;
+}
+.landing .landing-title h2 {
+  font-size: 5.5rem;
+}
+.landing .landing-title p {
+  font-size: 2.8rem;
+}
+.landing .landing-end {
+  margin: 3.5% 0 8% 2%;
+}
+.landing .landing-end p {
+  margin-bottom: 1.5%;
+}
+.landing .landing-end a {
+  text-decoration: none;
+  color: gold;
+  font-size: 2.8rem;
+  background-color: black;
+  border: 2px dotted darkred;
+}
+.landing .landing-end a:hover {
+  border: 7.5px dotted darkred;
+}

@@ -60,6 +60,10 @@ html, body {
 
 @default-size: 2rem;
 @test-border: 2px solid darkred;
+.default-link(){
+	text-decoration: none;
+	color: gold;
+}
 
 .container {
 	font-size: @default-size;
@@ -85,8 +89,60 @@ header {
 		width: 30%;
 		a {
 			width: 20%;
-			text-decoration: none;
-			color: gold;
+			.default-link();
+			// text-decoration: none;
+			// color: gold;
+		}
+	}
+}
+
+// Landing Styling
+
+span {
+	display: flex;
+	justify-content: center; 
+}
+
+.landing {
+	border: @test-border;
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+	width: 85%;
+	div {
+		// margin: %;
+	}
+	.landing-img {
+		width: 22%;
+		margin: 3.5% 0 0 2%;
+		img {
+			width: 100%;
+		}
+	}
+	.landing-title {
+		margin: 3.5% 0 0 2%;
+		h2 {
+			font-size: 5.5rem;
+		}
+		p {
+			font-size: 2.8rem;
+		}
+		padding-bottom: 2%;
+		border-bottom: @test-border;
+	}
+	.landing-end {
+		margin: 3.5% 0 8% 2%;
+		p {
+			margin-bottom: 1.5%;
+		}
+		a {
+			.default-link();
+			font-size: 2.8rem;
+			background-color: black;
+			border: 2px dotted darkred;
+			&:hover {
+				border: 7.5px dotted darkred;
+			}
 		}
 	}
 }
