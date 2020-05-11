@@ -140,6 +140,7 @@ body {
 }
 header {
   display: flex;
+  margin: 4%;
 }
 header h1 {
   width: 70%;
@@ -202,4 +203,30 @@ span {
 }
 .landing .landing-end a:hover {
   border: 7.5px dotted darkred;
+}
+.top-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+}
+.top-content .left-box-content {
+  width: 39%;
+}
+.top-content .left-box-content h2 {
+  font-size: 3.85rem;
+  padding-bottom: 0.65%;
+}
+.top-content .left-box-content p {
+  font-size: 1.95rem;
+}
+.top-content .right-box-content {
+  width: 39%;
+}
+.top-content .right-box-content h2 {
+  font-size: 3.85rem;
+  padding-bottom: 1%;
+}
+.top-content .right-box-content ul li {
+  padding: 2%;
+  border: 1px solid grey;
 }

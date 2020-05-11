@@ -74,6 +74,7 @@ html, body {
 header {
 	// border: @test-border;
 	display: flex;
+	margin: 4%;
 	h1 {
 		// border: @test-border;
 		width: 70%;
@@ -109,9 +110,6 @@ span {
 	flex-direction: column;
 	background-color: grey;
 	width: 85%;
-	div {
-		// margin: %;
-	}
 	.landing-img {
 		width: 22%;
 		margin: 3.5% 0 0 2%;
@@ -142,6 +140,41 @@ span {
 			border: 2px dotted darkred;
 			&:hover {
 				border: 7.5px dotted darkred;
+			}
+		}
+	}
+}
+
+// Top content styling
+
+.top-content {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+	// border: @test-border;
+	.left-box-content {
+		// border: @test-border;
+		width: 39%;
+		h2 {
+			font-size: 3.85rem;
+			padding-bottom: .65%;
+			// border: @test-border;
+		}
+		p {
+			font-size: 1.95rem;
+		}
+	}
+	.right-box-content {
+		// border: @test-border;
+		width: 39%;
+		h2 {
+			font-size: 3.85rem;
+			padding-bottom: 1%;
+		}
+		ul {
+			li {
+				padding: 2%;
+				border: 1px solid grey;
 			}
 		}
 	}
