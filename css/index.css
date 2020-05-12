@@ -2,6 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUkFUQ.ttf) format('truetype');
+}
 html,
 body,
 div,
@@ -134,6 +141,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
+  font-family: 'Courgette', cursive;
   background-color: #bcc0c4;
 }
 .container {
@@ -221,22 +229,54 @@ span {
   justify-content: space-evenly;
   padding-top: 3%;
 }
+@media (max-width: 500px) {
+  .top-content {
+    flex-wrap: wrap;
+  }
+}
 .top-content .left-box-content {
   width: 39%;
+}
+@media (max-width: 500px) {
+  .top-content .left-box-content {
+    width: 51%;
+    padding-bottom: 3.5%;
+  }
 }
 .top-content .left-box-content h2 {
   font-size: 3.85rem;
   padding-bottom: 0.65%;
 }
+@media (max-width: 500px) {
+  .top-content .left-box-content h2 {
+    border-bottom: 2px dashed black;
+  }
+}
 .top-content .left-box-content p {
   font-size: 1.95rem;
+}
+@media (max-width: 500px) {
+  .top-content .left-box-content p {
+    font-size: 2.2rem;
+  }
 }
 .top-content .right-box-content {
   width: 39%;
 }
+@media (max-width: 500px) {
+  .top-content .right-box-content {
+    width: 51%;
+    padding-bottom: 3.5%;
+  }
+}
 .top-content .right-box-content h2 {
   font-size: 3.85rem;
   padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .top-content .right-box-content h2 {
+    padding-bottom: 5%;
+  }
 }
 .top-content .right-box-content ul li {
   padding: 2%;
