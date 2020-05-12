@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +56,215 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+	font-family: 'Courgette', cursive;
+	background-color: rgb(188, 192, 196);
 }
 
+@default-size: 2rem;
+@test-border: 2px solid darkred;
+.default-link(){
+	text-decoration: none;
+	color: rgb(187, 166, 45);
+}
+@border-top: 1px solid darkgrey;
+.flex-column(){
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	font-size: @default-size;
+}
+
+// Header styling
+
+header {
+	// border: @test-border;
+	display: flex;
+	margin: 4%;
+	h1 {
+		// border: @test-border;
+		width: 70%;
+		padding-left: 2.5%;
+		font-size: 3rem;
+		color: darkred;
+	}
+	nav {
+		// border: @test-border;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 40%;
+		@media(max-width: 500px) {
+			width: 100%;
+		}
+		a {
+			padding-right: 5%;
+			.default-link();
+			@media(max-width: 500px) {
+
+			}
+		}
+	}
+}
+
+// Landing Styling
+
+span {
+	display: flex;
+	justify-content: center; 
+}
+
+.landing {
+	border: @test-border;
+	.flex-column();
+	background-color: lightsteelblue;
+	width: 85%;
+	.landing-img {
+		width: 22%;
+		margin: 3.5% 0 0 2%;
+		@media(max-width: 800px) {
+			width: 100%;
+			margin: 0;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.landing-title {
+		margin: 3.5% 0 0 2%;
+		h2 {
+			font-size: 5.5rem;
+		}
+		p {
+			font-size: 2.8rem;
+		}
+		padding-bottom: 2%;
+		border-bottom: @test-border;
+	}
+	.landing-end {
+		margin: 3.5% 0 8% 2%;
+		p {
+			margin-bottom: 1.5%;
+		}
+		a {
+			.default-link();
+			font-size: 2.8rem;
+			background-color: black;
+			border: 2px dotted darkred;
+			&:hover {
+				border: 7.5px dotted darkred;
+			}
+		}
+	}
+}
+
+// Top content styling
+
+.top-content {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+	@media(max-width: 500px) {
+		flex-wrap: wrap;
+	}
+	// border: @test-border;
+	.left-box-content {
+		// border: @test-border;
+		width: 39%;
+		@media(max-width: 500px) {
+			width: 51%;
+			padding-bottom: 3.5%;
+		}
+		h2 {
+			font-size: 3.85rem;
+			padding-bottom: .65%;
+			@media(max-width: 500px){
+				border-bottom: 2px dashed black;
+			}
+			// border: @test-border;
+		}
+		p {
+			font-size: 1.95rem;
+			@media(max-width: 500px) {
+				font-size: 2.2rem;
+			}
+		}
+	}
+	.right-box-content {
+		// border: @test-border;
+		width: 39%;
+		@media(max-width: 500px) {
+			width: 51%;
+			padding-bottom: 3.5%;
+		}
+		h2 {
+			font-size: 3.85rem;
+			padding-bottom: 1%;
+			@media(max-width: 500px) {
+				padding-bottom: 5%;
+			}
+		}
+		ul {
+			li {
+				padding: 2%;
+				border: 1px solid black;
+			}
+		}
+	}
+}
+
+// Bottom content styling
+
+.bottom-content {
+	// border: @test-border;
+	margin-top: 5%;
+	width: 85%;
+	h2 {
+		font-size: 2.8rem;
+		padding-bottom: 1%;
+	}
+	.history {
+		// border: @test-border;
+		width: 100%;
+		display: flex;
+		div {
+			width: 30%;
+			// border: @test-border;
+			p {
+				border-top: 2px solid black;
+				padding: 2.5%;
+			}
+			.p2, .p4 {
+				background-color: lightskyblue;
+			}
+		}
+	}
+}
+
+
+// Footer styling
+
+footer {
+	// border: @test-border;
+	.flex-column();
+	align-items: center;
+	justify-content: center;
+	height: 15vh;
+	color: gold;
+	background-color: darkred;
+	margin-top: 3%;
+	width: 85%;
+	a {
+		.default-link();
+		margin-bottom: 1%;
+		border: 4px dotted black;
+		&:hover {
+			background-color: white;
+			color: black;
+			border: 4px solid rgb(187, 166, 45);
+		}
+	}
+}

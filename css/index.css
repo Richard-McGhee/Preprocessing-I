@@ -1,1 +1,329 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUkFUQ.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Courgette', cursive;
+  background-color: #bcc0c4;
+}
+.container {
+  font-size: 2rem;
+}
+header {
+  display: flex;
+  margin: 4%;
+}
+header h1 {
+  width: 70%;
+  padding-left: 2.5%;
+  font-size: 3rem;
+  color: darkred;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
+}
+header nav a {
+  padding-right: 5%;
+  text-decoration: none;
+  color: #bba62d;
+}
+span {
+  display: flex;
+  justify-content: center;
+}
+.landing {
+  border: 2px solid darkred;
+  display: flex;
+  flex-direction: column;
+  background-color: lightsteelblue;
+  width: 85%;
+}
+.landing .landing-img {
+  width: 22%;
+  margin: 3.5% 0 0 2%;
+}
+@media (max-width: 800px) {
+  .landing .landing-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.landing .landing-img img {
+  width: 100%;
+}
+.landing .landing-title {
+  margin: 3.5% 0 0 2%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid darkred;
+}
+.landing .landing-title h2 {
+  font-size: 5.5rem;
+}
+.landing .landing-title p {
+  font-size: 2.8rem;
+}
+.landing .landing-end {
+  margin: 3.5% 0 8% 2%;
+}
+.landing .landing-end p {
+  margin-bottom: 1.5%;
+}
+.landing .landing-end a {
+  text-decoration: none;
+  color: #bba62d;
+  font-size: 2.8rem;
+  background-color: black;
+  border: 2px dotted darkred;
+}
+.landing .landing-end a:hover {
+  border: 7.5px dotted darkred;
+}
+.top-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+}
+@media (max-width: 500px) {
+  .top-content {
+    flex-wrap: wrap;
+  }
+}
+.top-content .left-box-content {
+  width: 39%;
+}
+@media (max-width: 500px) {
+  .top-content .left-box-content {
+    width: 51%;
+    padding-bottom: 3.5%;
+  }
+}
+.top-content .left-box-content h2 {
+  font-size: 3.85rem;
+  padding-bottom: 0.65%;
+}
+@media (max-width: 500px) {
+  .top-content .left-box-content h2 {
+    border-bottom: 2px dashed black;
+  }
+}
+.top-content .left-box-content p {
+  font-size: 1.95rem;
+}
+@media (max-width: 500px) {
+  .top-content .left-box-content p {
+    font-size: 2.2rem;
+  }
+}
+.top-content .right-box-content {
+  width: 39%;
+}
+@media (max-width: 500px) {
+  .top-content .right-box-content {
+    width: 51%;
+    padding-bottom: 3.5%;
+  }
+}
+.top-content .right-box-content h2 {
+  font-size: 3.85rem;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .top-content .right-box-content h2 {
+    padding-bottom: 5%;
+  }
+}
+.top-content .right-box-content ul li {
+  padding: 2%;
+  border: 1px solid black;
+}
+.bottom-content {
+  margin-top: 5%;
+  width: 85%;
+}
+.bottom-content h2 {
+  font-size: 2.8rem;
+  padding-bottom: 1%;
+}
+.bottom-content .history {
+  width: 100%;
+  display: flex;
+}
+.bottom-content .history div {
+  width: 30%;
+}
+.bottom-content .history div p {
+  border-top: 2px solid black;
+  padding: 2.5%;
+}
+.bottom-content .history div .p2,
+.bottom-content .history div .p4 {
+  background-color: lightskyblue;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  color: gold;
+  background-color: darkred;
+  margin-top: 3%;
+  width: 85%;
+}
+footer a {
+  text-decoration: none;
+  color: #bba62d;
+  margin-bottom: 1%;
+  border: 4px dotted black;
+}
+footer a:hover {
+  background-color: white;
+  color: black;
+  border: 4px solid #bba62d;
+}
