@@ -93,10 +93,16 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 30%;
+		width: 40%;
+		@media(max-width: 500px) {
+			width: 100%;
+		}
 		a {
-			width: 20%;
+			padding-right: 5%;
 			.default-link();
+			@media(max-width: 500px) {
+
+			}
 		}
 	}
 }
@@ -116,6 +122,10 @@ span {
 	.landing-img {
 		width: 22%;
 		margin: 3.5% 0 0 2%;
+		@media(max-width: 800px) {
+			width: 100%;
+			margin: 0;
+		}
 		img {
 			width: 100%;
 		}

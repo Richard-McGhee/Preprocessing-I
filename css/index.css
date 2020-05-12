@@ -153,10 +153,15 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
-  width: 20%;
+  padding-right: 5%;
   text-decoration: none;
   color: #bba62d;
 }
@@ -174,6 +179,12 @@ span {
 .landing .landing-img {
   width: 22%;
   margin: 3.5% 0 0 2%;
+}
+@media (max-width: 800px) {
+  .landing .landing-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .landing .landing-img img {
   width: 100%;
